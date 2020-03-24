@@ -1,0 +1,146 @@
+{
+	"info": {
+		"_postman_id": "fd07538f-3780-4bbf-aee9-a22c9caa814e",
+		"name": "bismillah",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "products",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost/northwind/api/products.php?name=Chef&limit=1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"northwind",
+						"api",
+						"products.php"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "Chef"
+						},
+						{
+							"key": "limit",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "orders",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://localhost/northwind/api/orders.php?OrderID=1&CustomerID=VINET&EmployeeID=5&ProductID=2&Quantity=30",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"northwind",
+						"api",
+						"orders.php"
+					],
+					"query": [
+						{
+							"key": "OrderID",
+							"value": "1"
+						},
+						{
+							"key": "CustomerID",
+							"value": "VINET"
+						},
+						{
+							"key": "EmployeeID",
+							"value": "5"
+						},
+						{
+							"key": "ProductID",
+							"value": "2"
+						},
+						{
+							"key": "Quantity",
+							"value": "30"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"url": {
+					"raw": "http://localhost/northwind/api/update.php?OrderID=1&ProductID=2&Quantity=25",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"northwind",
+						"api",
+						"update.php"
+					],
+					"query": [
+						{
+							"key": "OrderID",
+							"value": "1"
+						},
+						{
+							"key": "ProductID",
+							"value": "2"
+						},
+						{
+							"key": "Quantity",
+							"value": "25"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "cancel",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost/northwind/api/cancel.php?OrderID=1&ProductID=2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"northwind",
+						"api",
+						"cancel.php"
+					],
+					"query": [
+						{
+							"key": "OrderID",
+							"value": "1"
+						},
+						{
+							"key": "ProductID",
+							"value": "2"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
